@@ -174,26 +174,8 @@ K = 8 + N % 5 = 8 + 2 = **10** отсчётов.
 
 ## 12. Запуск проекта
 
-### Автозапуск в VS Code
-
-1. Установить Python 3.11+ и VS Code.
-2. Распаковать архив и открыть папку `prac3` (**File → Open Folder**). В Windows можно запустить `start.bat`, если доступна команда `code`.
-3. Подтвердить доверие к папке (**Trust**).
-4. Разрешить автоматические задачи: `Ctrl+Shift+P` → **Tasks: Manage Automatic Tasks** → **Allow Automatic Tasks**.
-5. Выполнить `Ctrl+Shift+P` → **Developer: Reload Window**. После этого тесты запускаются при открытии папки.
-
-Автозапуск настроен в `.vscode/tasks.json` (`"runOn": "folderOpen"`). Это запуск при открытии папки в VS Code, а не при включении компьютера. Ручной запуск: **Tasks: Run Test Task**.
-
-Задача вызывает `python` в Windows и `python3` в macOS/Linux. Если в Windows работает только `py`, замените `"python"` на `"py"` в `tasks.json`.
-
-### Запуск из терминала
-
-```text
 python run_all.py                 # три прогона, обновляет три протокола
 python check.py > protocol.txt    # только проверка текущей версии
-```
-
-Протоколы в этом отчёте получены на Python 3.13.18. Повторный запуск перезаписывает файлы протоколов; если версия Python на вашем компьютере другая, укажите её в разделах 5, 7–9.
 
 ## 13. Состав проекта
 
@@ -205,11 +187,7 @@ python check.py > protocol.txt    # только проверка текущей
 | protocol.txt | протокол исходной версии |
 | protocol_defect.txt | протокол версии с дефектом |
 | protocol_retest.txt | протокол повторного прогона |
-| .vscode/tasks.json | автозапуск в VS Code |
-| start.bat | открытие проекта в VS Code (Windows) |
 | README.md | отчёт |
-
-**Ссылка на репозиторий `prac3-test-matrix`:** ______________________
 
 ## 14. Вывод
 
